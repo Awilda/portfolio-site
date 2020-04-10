@@ -1,0 +1,27 @@
+.header {
+	background-color: $morningsky-blue;
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+}
+
+.header__title {
+	font-size: $l-size;
+	font-style: italic;
+	color: white;
+	margin: auto;
+}
+
+.header__nav {
+	margin: auto;
+}
+
+.header__navItems {
+	color: $mist-green;
+	padding-left: 2rem;
+	text-decoration: none;
+}
+
+.header__navItems:hover {
+	color: $cerulean-blue;
+}

@@ -1,0 +1,21 @@
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: $morningsky-blue;
+	text-align: center;
+}
+.footer__text {
+	color: $cerulean-blue;
+	font-size: $s-size;
+}
+.footer__icons {
+	a {
+		color: $cerulean-blue;
+		padding: 0.5rem;
+	}
+	a:hover {
+		color: white;
+	}
+}
