@@ -1,0 +1,25 @@
+.contactPage {
+	label {
+		color: $mist-green;
+		font-size: $m-size;
+		padding-bottom: 1rem;
+	}
+	input {
+	    margin-bottom: 1rem;
+	    line-height: 2;
+	}
+	textarea {
+		height: 20rem;
+    	width: auto;
+	}
+}
+#contactPage__submitButton {
+	color: white;
+	background-color: $mist-green;
+	margin-top: 2rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    &:hover {
+    	background-color: $honey;
+    }
+}

@@ -61,37 +61,36 @@ handleChange = (e) => {
 
 render() {
     return (
-        <div>
+        <div className="contactPage">
         <h1 className="contactPage__title" >Contact Me!</h1>
         <form className="contactPage__form" onSubmit={this.handleSubmit.bind(this)}>
-            <label>Name</label>
+            <label>Name:</label>
             <input 
                 type="text"
                 name="name"
                 value={this.state.name}
-                className=""
-                onChange={this.handleChange}
-                placeholder="Name" />
-            <label>Email</label>
+                id="contactPage__name"
+                onChange={this.handleChange} />
+            <label>Email:</label>
             <input 
                 type="email"
                 name="email"
                 value={this.state.email}
-                className="contactPage__email"
-                onChange={this.handleChange}
-                placeholder="Enter email" />
-            <label>Message</label>
+                id="contactPage__email"
+                onChange={this.handleChange} />
+            <label>Message:</label>
             <textarea
                 type="textarea"
                 name="message"
                 value={this.state.message}
-                className="contactPage__message"
+                id="contactPage__message"
                 onChange={this.handleChange}
                 wrap="hard">
             </textarea>
             <input 
                 type="submit" 
-                value="Send" 
+                value="Send"
+                id="contactPage__submitButton" 
                 onClick={this.openModalHandler} />
         </form>
         <Modal

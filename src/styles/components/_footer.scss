@@ -1,16 +1,24 @@
 .footer {
-	position: fixed;
+	// position: absolute;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: $morningsky-blue;
+    height: 7rem;
+    display: flex;
+  	align-items: center;
+  	justify-content: center;
+    flex-direction: column;
 	text-align: center;
+	background-color: $morningsky-blue;
 }
 .footer__text {
 	color: $cerulean-blue;
 	font-size: $s-size;
+    padding-top: 0.5rem;
+	margin: 0;
 }
 .footer__icons {
+	padding-top: 0.5rem;
 	a {
 		color: $cerulean-blue;
 		padding: 0.5rem;
