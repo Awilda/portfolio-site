@@ -13,13 +13,34 @@
     	width: auto;
 	}
 }
+.contactPage__title {
+	text-align: center;
+}
+.contactPage__form {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem !important;
+}
+.contactPage__message {
+    height: 15rem;
+}
 #contactPage__submitButton {
 	color: white;
 	background-color: $mist-green;
 	margin-top: 2rem;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     &:hover {
     	background-color: $honey;
     }
+}
+@media (min-width: $desktop-breakpoint) {
+	.contactPage_form {
+		margin: 4rem 30rem;
+	}
+	.contactPage__submitButton {
+		margin-top: 2rem;
+    	margin-left: 20rem;
+    	margin-right: 20rem;
+	}
 }
