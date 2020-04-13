@@ -6,7 +6,7 @@ import { Merritt, Smacna, BuildsBio, AOA, Indecision } from './../portfolioImpor
 const PortfolioPage = () => {
 	return (
 		<div className="portfolio">
-			<h1 className="portfolio__title">Work & Projects</h1>
+			<h1 className="portfolio__title">work &amp; projects</h1>
 				<div className="portfolio__itemsContainer">
 				<div className="portfolio__itemLinkContainer">
 					<Link className="portfolio__item" to="/portfolio/merritt">

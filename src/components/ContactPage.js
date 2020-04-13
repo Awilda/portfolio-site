@@ -62,7 +62,7 @@ handleChange = (e) => {
 render() {
     return (
         <div className="contactPage">
-        <h1 className="contactPage__title" >Contact Me!</h1>
+        <h1 className="contactPage__title" >contact me!</h1>
         <form className="contactPage__form" onSubmit={this.handleSubmit.bind(this)}>
             <label>Name:</label>
             <input 
