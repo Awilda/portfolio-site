@@ -26,11 +26,11 @@
         max-height: 100%;
         align-self: center;
         object-fit: cover;
-        background-color: $honey;
   	}
   	img {
   		&:hover {
   			opacity: 0.7;
+  			transform: scale(1.1);
   		}
   	}
 }
@@ -41,7 +41,8 @@
 	text-decoration: none;
 	p {
 		border: 1px solid;
-		color: $mist-green;
+		background-color: $morningsky-blue;
+		color: white;
 		font-family: 'Montserrat', sans-serif;
 		font-size: $m-size;
 		font-weight: 700;
@@ -50,7 +51,8 @@
 	    padding-top: 0.5rem;
 	    padding-bottom: 0.5rem;
 		&:hover {
-			color: $honey;
+			border: $morningsky-blue;
+			background-color: $honey;
 		}
 	}
 }

@@ -1,23 +1,65 @@
 .portfolioItemPage {
-	padding-bottom: 5rem;
+	padding-bottom: 14rem;
+	font-family: 'Montserrat', sans-serif;
+	p {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 2rem;
+		line-height: 1.5;
+	}
+	a {
+		color: $mist-green;
+		&:hover {
+			color: $honey;
+		}
+	}
 }
 .portfolioPage {
 	display: flex;
-	margin: 4rem 6rem 4rem 10rem;
+	flex-wrap: wrap-reverse;
+	margin: 2rem;
 	* {
 		align-self: center;
 	}
 }
+.portfolioPage__name {
+	font-family: 'Volkhov', serif, Helvetica, Arial, sans-serif;
+	font-size: $l-size;
+	text-decoration: underline;
+}
 .portfolioPage__image {
 	text-align: center;
-	width: (100%/2);
+	width: 100%;
     display: block;
     img {
     	width: 100%;
     }
 }
 .portfolioPage__info {
-	width: (100%/2);
+	width: 100%;
 	display: flex;
     flex-direction: column;
+    padding-right: 1rem;
+	padding-left: 1rem;
+}
+.portfolioPage__description {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+@media (min-width: $desktop-breakpoint) {
+	.portfolioPage {
+		margin: 4rem 6rem 4rem 10rem;
+	}
+	.portfolioPage__image,
+	.portfolioPage__info {
+		width: (100%/2);
+	}
+	.portfolioPage__info {
+	    padding-right: 0rem;
+	    padding-left: 0rem;
+	}
+	p {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
 }

@@ -30,13 +30,19 @@
 	margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    padding: 1rem;
     &:hover {
     	background-color: $honey;
     }
+    &:disabled {
+    	background-color: #d3d3d3;
+    }
 }
 @media (min-width: $desktop-breakpoint) {
-	.contactPage_form {
+	.contactPage__form {
 		margin: 4rem 30rem;
+		padding-left: 25rem;
+    	padding-right: 25rem;
 	}
 	.contactPage__submitButton {
 		margin-top: 2rem;

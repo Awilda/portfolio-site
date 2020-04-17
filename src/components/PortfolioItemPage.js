@@ -8,7 +8,7 @@ import PortfolioPageIndecision from './PortfolioPageIndecision';
 
 const PortfolioItemPage = (props) => {
 	return (
-		<div class="portfolioItemPage">
+		<div className="portfolioItemPage">
 			{(function() {
 	        	switch (props.match.params.id) {
 	        		case 'merritt':

@@ -5,6 +5,7 @@
   "author": "Awilda Couverthier",
   "license": "MIT",
   "scripts": {
+    "deploy": "yarn build && surge ./public --domain awildacouverthier.com",
     "serve": "live-server public/",
     "build": "webpack",
     "dev-server": "webpack-dev-server"

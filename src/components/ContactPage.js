@@ -7,7 +7,15 @@ class ContactPage extends React.Component {
         name: '',
         email: '',
         message: '',
-        isShowing: false
+        isShowing: false,
+    }
+
+    isDisabled() {
+        if (this.state.name > 0 && this.state.email > 0 && this.state.message > 0) {
+            this.setState({
+                enabled: false
+            });
+        }
     }
 
     openModalHandler = () => {
@@ -52,6 +60,7 @@ class ContactPage extends React.Component {
 };
 
 handleChange = (e) => {
+    this.isDisabled();
     const value = e.target.value;
     this.setState({
         ...this.state,
@@ -70,14 +79,16 @@ render() {
                 name="name"
                 value={this.state.name}
                 id="contactPage__name"
-                onChange={this.handleChange} />
+                onChange={this.handleChange}
+                required />
             <label>Email:</label>
             <input 
                 type="email"
                 name="email"
                 value={this.state.email}
                 id="contactPage__email"
-                onChange={this.handleChange} />
+                onChange={this.handleChange} 
+                required/>
             <label>Message:</label>
             <textarea
                 type="textarea"
@@ -85,13 +96,17 @@ render() {
                 value={this.state.message}
                 id="contactPage__message"
                 onChange={this.handleChange}
-                wrap="hard">
+                wrap="hard"
+                required>
             </textarea>
-            <input 
+            <button
                 type="submit" 
                 value="Send"
                 id="contactPage__submitButton" 
-                onClick={this.openModalHandler} />
+                onClick={
+                    this.state.name > 0 && this.state.email > 0 && this.state.message > 0 ? this.openModalHandler : this.closeModalHandler
+                }
+                >Send</button>
         </form>
         <Modal
         className="modal"

@@ -6,8 +6,10 @@ const ProfilePageIndecision = () => (
 			<img src="../../../images/indecision_app.png" />
 		</div>
 		<div className="portfolioPage__info">
-			<p className="portfolioPage__name">Indecision App</p>
-			<p className="portfolioPage__description">Here's some info about this project</p>
+			<h1 className="portfolioPage__name">indecision app</h1>
+			<p className="portfolioPage__description">An app that simply helps you decide what to do! Built on React with webpack.<br />
+			<br />
+			<a href="https://github.com/Awilda/indecision-app" target="_blank">View source code</a></p>
 		</div>
 	</div>
 );

@@ -5,20 +5,14 @@ const Modal = (props) => {
         <div>
             <div className="modal-wrapper"
                 style={{
-                    transform: props.show ? 'translateY(0vh)' : 'translateY(-100vh)',
+                    transform: props.show ? 'translateY(0vh)' : 'translateY(0vh)',
                     opacity: props.show ? '1' : '0'
                 }}>
                 <div className="modal-header">
-                    <h3>Modal Header</h3>
-                    <span className="close-modal-btn" onClick={props.close}>×</span>
-                </div>
-                <div className="modal-body">
-                    <p>
-                        {props.children}
-                    </p>
+                    <h3>Thank you for your message!</h3>
                 </div>
                 <div className="modal-footer">
-                    <button className="btn-cancel" onClick={props.close}>CLOSE</button>
+                    <button className="btn-cancel" onClick={props.close}>Close</button>
                 </div>
             </div>
         </div>
