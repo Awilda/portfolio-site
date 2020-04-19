@@ -24,3 +24,9 @@ button:disabled {
 .is-active {
 	font-weight: bold;
 }
+
+.pageContainer {
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

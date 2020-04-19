@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 
 const AppRouter =() => (
 	<BrowserRouter>
-		<div>
+		<div className="pageContainer">
 			<Header />
 			<Switch>
 				<Route path="/" component={HomePage} exact={true} />
