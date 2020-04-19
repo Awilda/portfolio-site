@@ -72,6 +72,10 @@ render() {
     return (
         <div className="contactPage">
         <h1 className="contactPage__title" >contact me!</h1>
+        <div className="contactPage__social">
+            <a href="https://github.com/Awilda" target="_blank">github</a>
+            <a href="https://www.linkedin.com/in/awildacouverthier/" target="_blank">linkedin</a>
+        </div>
         <form className="contactPage__form" onSubmit={this.handleSubmit.bind(this)}>
             <label>Name:</label>
             <input 
