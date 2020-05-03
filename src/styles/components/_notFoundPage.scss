@@ -1,0 +1,17 @@
+.notFoundPage {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+    padding-bottom: 5rem;
+	* {
+		color: $cerulean-blue;
+	}
+}
+.notFoundPage__errorCode {
+	font-size: $xl-size;
+	text-align: center;
+}
+.notFoundPage__redirectMessage {
+	font-size: $l-size;
+	text-align: center;
+}
